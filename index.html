@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8" />
+    <title>KKN-PPM UGM CIHAMPELAS 2025</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" />
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full height of the viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div id="status">
+        <img src="images/preloader.gif" height="64" width="64" alt="" />
+      </div>
+    </div>
+
+    <!-- Header
+   ================================================== -->
+    <header>
+      <div class="logo">
+        <a class="smoothscroll" href="#hero"><img alt="" src="images/logo.png" /></a>
+      </div>
+
+      <nav id="nav-wrap">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>
+
+        <ul id="nav" class="nav">
+          <li><a class="smoothscroll" href="#features">About</a></li>
+          <li><a class="smoothscroll" href="#pricing">Colaboration</a></li>
+          <li><a class="smoothscroll" href="#screenshots">Location</a></li>
+          <li><a class="smoothscroll" href="#testimonials">Conclusion</a></li>
+          <li><a class="smoothscroll" href="#subscribe">Profile</a></li>
+        </ul>
+        <!-- end #nav -->
+      </nav>
+      <!-- end #nav-wrap -->
+
+      <ul class="header-social">
+        <li>
+          <a href="https://www.instagram.com/nabilaadifaa?igsh=b3Fvemk0bHBjaGo="><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="mailto:nabila.adifa10@gmail.com"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+    </header>
+    <!-- Header End -->
+
+    <!-- Homepage Hero
+   ================================================== -->
+    <section id="hero">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="hero-text">
+            <h1 class="responsive-headline">Jejak Sampah dan Waktu: <br />Edukasi Masa Penguraian Sampah</h1>
+
+            <p>
+              WebGIS ini berisi tampilan dan informasi detail masa penguraian sampah <br />
+              di Ruang Terbuka Hijau, Desa Citapen, Kecamatan Cihampelas, Kabupaten Bandung Barat
+            </p>
+          </div>
+
+          <div class="buttons">
+            <a class="button learn-more smoothscroll" href="#features">Learn More</a>
+          </div>
+
+          <div class="hero-image">
+            <img src="images/hero-image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Homepage Hero end -->
+
+    <!-- Features Section
+   ================================================== -->
+    <section id="features">
+      <div class="row feature video" style="text-align: center">
+        <h2>YUK MENGENAL JENIS-JENIS SAMPAH!</h2>
+        <br />
+
+        <h5>1. Sampah Organik</h5>
+        <p>
+          Sampah organik merupakan sampah yang sifatnya mudah terurai di alam (mudah busuk) seperti sisa makanan, daun-daunan, atau ranting pohon. Sampah organik umumnya diwadahi dengan tempat sampah berwarna hijau. Dengan memisahkan sampah
+          organik dalam wadah tersendiri, maka dapat memudahkan sampah organik diproses menjadi pupuk kompos.
+        </p>
+        <h5>2. Sampah Anorganik</h5>
+        <p>
+          Sampah anorganik merupakan sampah yang sifatnya lebih sulit diurai seperti sampah plastik, kaleng, dan styrofoam. Sampah anorganik umumnya diwadahi dengan tempat sampah berwarna kuning. Dengan adanya tempat sampah khusus maka
+          dapat mempermudah pemanfaatan sampah anorganik sebagai kerajinan daur ulang atau daur ulang di pabrik.
+        </p>
+        <h5>3. Sampah Bahan Berbahaya dan Beracun (B3)</h5>
+        <p>
+          Sampah B3 umumnya diwadahi dengan tempat sampah berwarna merah. Sampah B3 merupakan sampah yang dapat membahayakan manusia, hewan, atau lingkungan sekitar. Contoh sampah B3 yaitu sampah kaca, kemasan detergen atau pembersih
+          lainnya, serta pembasmi serangga dan sejenisnya. Agar meminimalisir dampak yang mungkin ditimbulkan, sampah B3 perlu dikelompokkan secara khusus dalam satu wadah.
+        </p>
+        <h5>4. Sampah Residu</h5>
+        <p>
+          Sampah residu merupakan sampah sisa di luar keempat jenis sampah di atas. Tempat sampah yang diperuntukan bagi tempat sampah residu umumnya berwarna abu-abu. Contoh sampah residu yaitu seperti popok bekas, bekas pembalut, bekas
+          permen karet, atau puntung rokok.
+        </p>
+        <!-- Tombol Read More dipindahkan ke sini dan diposisikan tengah -->
+        <a class="button" href="https://waste4change.com/blog/sampah-pengertian-jenis-hingga-peraturannya-di-indonesia/" style="margin-top: 10px">Read More</a>
+      </div>
+
+      <div class="row feature video" style="text-align: center">
+        <h2>YUK MENGENAL MASA PENGURAIAN SAMPAH!</h2>
+      </div>
+
+      <div class="row feature design">
+        <div class="six columns right" style="text-align: center">
+          <br /><br /><br />
+          <h2>SAMPAH KERTAS</h2>
+          <p>
+            Perkiraan waktu penguraian sekitar 2-5 bulan <br />
+            Contoh: Kardus, tisu, buku <br />
+            Sumber: National Park Service USA
+          </p>
+          <!-- Tombol Read More dipindahkan ke sini dan diposisikan tengah -->
+        </div>
+
+        <div class="six columns feature-media left">
+          <img src="images/barakat.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="row feature responsive">
+        <div class="six columns left" style="text-align: center">
+          <br /><br /><br />
+          <h2>SAMPAH KARTON MULTILAPIS</h2>
+          <p>
+            Perkiraan waktu penguraian kurang lebih 5 tahun <br />
+            Contoh: Kemasan minuman Buavita <br />
+            Sumber: Tetra Pak Official, WWF
+          </p>
+          <!-- Tombol Read More dipindahkan ke sini dan diposisikan tengah -->
+        </div>
+
+        <div class="six columns feature-media right">
+          <img src="images/buavita.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="row feature cross-browser">
+        <div class="six columns right" style="text-align: center">
+          <br /><br /><br />
+          <h2>SAMPAH ALUMINIUM</h2>
+          <p>
+            Perkiraan waktu penguraian kurang lebih 200 tahun <br />
+            Contoh: Kaleng minuman Larutan Cap Badak <br />
+            Sumber: UNEP, National Geographic
+          </p>
+          <!-- Tombol Read More dipindahkan ke sini dan diposisikan tengah -->
+        </div>
+
+        <div class="six columns feature-media right">
+          <img src="images/kaleng.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="row feature video">
+        <div class="six columns left" style="text-align: center">
+          <br /><br /><br />
+          <h2>SAMPAH PLASTIK PET</h2>
+          <p>
+            Perkiraan waktu penguraian kurang lebih 450 tahun <br />
+            Contoh: Botol minuman Mizone <br />
+            Sumber: EPA, National Geographic
+          </p>
+          <!-- Tombol Read More dipindahkan ke sini dan diposisikan tengah -->
+        </div>
+
+        <div class="six columns feature-media left">
+          <img src="images/mizone.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="row feature video">
+        <div class="six columns right" style="text-align: center">
+          <br /><br /><br />
+          <h2>SAMPAH PP/PS</h2>
+          <p>
+            Perkiraan waktu penguraian kurang lebih 500 tahun <br />
+            Contoh: Gelas plastik Susu Murni Nasional <br />
+            Sumber: Columbia University Earth Institute
+          </p>
+          <!-- Tombol Read More dipindahkan ke sini dan diposisikan tengah -->
+        </div>
+
+        <div class="six columns feature-media right">
+          <img src="images/susu.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="row feature video">
+        <div class="six columns left" style="text-align: center">
+          <br /><br /><br />
+          <h2>SAMPAH STRYROFOAM</h2>
+          <p>
+            Perkiraan waktu penguraian membutuhkan ribuan tahun atau bahkan tidak terurai<br />
+            Contoh: Wadah makanan <br />
+            Sumber: Columbia University, Ocean Conservancy
+          </p>
+          <!-- Tombol Read More dipindahkan ke sini dan diposisikan tengah -->
+        </div>
+
+        <div class="six columns feature-media left">
+          <img src="images/styrofoam.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Homepage Hero end -->
+
+    <!-- Pricing Section
+   ================================================== -->
+    <section id="pricing">
+      <div class="row section-head">
+        <h1>LEMBAGA & INSTANSI</h1>
+
+        <p>WebGIS ini dibuat atas kerjasama antara Pemerintah Desa Citapen dengan KKN-PPM UGM Cihampelas Periode II 2025</p>
+      </div>
+
+      <div class="row">
+        <div class="pricing-tables bgrid-quarters s-bgrid-halves">
+          <div class="column">
+            <div class="price-block">
+              <h3 class="plan-title">
+                Pemerintah <br />
+                Desa <br />
+                Citapen
+              </h3>
+
+              <ul class="features">
+                <li>
+                  <a href="mailto:desacitapen01@gmail.com"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+
+              <footer class="plan-sign-up">
+                <a class="button" href="https://citapen.berdesa.id/">More Info</a>
+              </footer>
+            </div>
+            <!-- End Price Block -->
+          </div>
+          <!-- End Column -->
+
+          <div class="column">
+            <div class="price-block">
+              <h3 class="plan-title">Universitas <br />Gadjah <br />Mada</h3>
+
+              <ul class="features">
+                <li>
+                  <a href="mailto:skkk@ugm.ac.id"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+
+              <footer class="plan-sign-up">
+                <a class="button" href="https://ugm.ac.id/id/">More Info</a>
+              </footer>
+            </div>
+            <!-- End Price Block -->
+          </div>
+          <!-- End Column -->
+
+          <div class="column">
+            <div class="price-block">
+              <h3 class="plan-title">KKN-PPM <br />UNIVERSITAS <br />GADJAH MADA</h3>
+
+              <ul class="features">
+                <li>
+                  <a href="mailto:kkn@ugm.ac.id"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+
+              <footer class="plan-sign-up">
+                <a class="button" href="http://ugm.id/kknppmugm">More Info</a>
+              </footer>
+            </div>
+            <!-- End Price Block -->
+          </div>
+          <!-- End Column -->
+
+          <div class="column">
+            <div class="price-block">
+              <h3 class="plan-title">KKN-PPM UGM<br />CIHAMPELAS <br />PERIODE II 2025</h3>
+
+              <ul class="features">
+                <li>
+                  <a href="mailto:sekocihampelas@gmail.com"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+
+              <footer class="plan-sign-up">
+                <a class="button" href="https://www.instagram.com/sekocihampelas?igsh=NHpoZ2Fwa2ZjbW14">More Info</a>
+              </footer>
+            </div>
+            <!-- End Price Block -->
+          </div>
+          <!-- End Column -->
+        </div>
+      </div>
+    </section>
+    <!-- Pricing End -->
+
+    <!-- Call-To-Action Section
+   ================================================== -->
+    <section id="call-to-action">
+      <div class="row">
+        <h2><center>Mengapa dibutuhkan informasi masa penguraian sampah?</center></h2>
+        <p>
+          <center>
+            Dibutuhkan informasi masa penguraian sampah karena beberapa alasan: <br />
+            1. Dengan mengetahui lamanya waktu yang dibutuhkan suatu sampah untuk terurai, masyarakat menjadi lebih sadar akan dampak jangka panjang dari perilaku membuang sampah sembarangan, terutama sampah anorganik seperti plastik dan
+            aluminium.<br />
+            2. Informasi ini mendorong masyarakat untuk memilah sampah sejak dari rumah, meminimalkan penggunaan bahan yang sulit terurai, dan lebih memilih produk ramah lingkungan.<br />
+            3. Sampah yang tidak terurai dalam waktu lama dapat mencemari tanah, air, dan udara. Mengetahui masa penguraian membantu dalam menentukan jenis sampah yang perlu mendapat perhatian khusus dalam pengelolaannya.<br />
+            4. Pemerintah dan lembaga terkait dapat merancang kebijakan atau program pengelolaan sampah yang lebih efektif berdasarkan data masa penguraian, seperti larangan plastik sekali pakai atau kewajiban daur ulang.<br />
+            5. Sampah yang menumpuk di lingkungan alam dapat membahayakan satwa liar dan merusak rantai makanan. Informasi penguraian membantu dalam perlindungan jangka panjang terhadap ekosistem.<br />
+          </center>
+        </p>
+      </div>
+    </section>
+    <!-- Call-To-Action Section End-->
+
+    <!-- Screenshots
+   ================================================== -->
+
+    <section id="screenshots">
+      <div class="row section-head">
+        <h1>Location</h1>
+        <p>Lokasi Ruang Terbuka Hijau di Desa Citapen, Kecamatan Cihampelas, Kabupaten Bandung Barat</p>
+      </div>
+      <div id="map" style="height: 600px; width: 100%; border-radius: 8px"></div>
+    </section>
+
+    <!-- Screenshots End -->
+
+    <!-- Testimonials Section
+   ================================================== -->
+    <section id="testimonials">
+      <div class="row content">
+        <span><i class="quote-left fa fa-quote-left"></i></span>
+
+        <div class="text-container">
+          <div class="twelve columns">
+            <h1>Conclusion</h1>
+          </div>
+
+          <div class="twelve columns flex-container">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <blockquote>
+                    <p>
+                      WebGIS yang menampilkan informasi masa penguraian sampah memberikan visualisasi edukatif yang menarik bagi masyarakat. Dengan pendekatan spasial, data menjadi lebih mudah diakses dan dipahami. Selain meningkatkan
+                      kesadaran lingkungan, WebGIS turut mendukung pengambilan keputusan dalam pengelolaan sampah yang bijak, partisipatif, dan berbasis bukti secara lokal dan regional.
+                    </p>
+                  </blockquote>
+                </li>
+                <!-- slide ends -->
+
+                <li>
+                  <blockquote>
+                    <p>
+                      Penyajian data masa penguraian sampah dalam WebGIS mampu memberikan edukasi secara interaktif dan informatif. Teknologi ini memudahkan masyarakat dalam memahami dampak lingkungan berdasarkan lokasi dan jenis sampah.
+                      Dengan demikian, WebGIS berperan penting dalam mendorong perilaku ramah lingkungan dan memperkuat strategi pengelolaan sampah yang berkelanjutan di berbagai wilayah.
+                    </p>
+                  </blockquote>
+                </li>
+                <!-- slide ends -->
+              </ul>
+            </div>
+            <!-- div.flexslider ends -->
+          </div>
+          <!-- div.flex-container ends -->
+        </div>
+        <!-- text-container ends -->
+
+        <span><i class="quote-right fa fa-quote-right"></i></span>
+      </div>
+      <!-- row ends -->
+    </section>
+    <!-- Testimonials Section End-->
+
+    <!-- Subscribe
+   ================================================== -->
+    <section id="subscribe">
+      <div class="row section-head">
+        <div class="twelve columns">
+          <h1>Profile</h1>
+
+          <p>
+            <b>WebGIS ini dibuat oleh:<br /></b>
+            Nabila Adifa<br />
+            KKN-PPM UGM Cihampelas Periode II 2025<br /><br />
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <p>Terima kasih telah berkunjung! <br />Semoga informasi ini dapat tersampaikan dan bermanfaat</p>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section End-->
+
+    <!-- Footer
+   ================================================== -->
+    <footer>
+      <div class="row">
+        <div class="six columns info">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="images/footer-logo.png" alt="" />
+            </a>
+          </div>
+
+          <p>WebGIS ini berisi tampilan dan informasi detail masa penguraian sampah di Ruang Terbuka Hijau, Desa Citapen, Kecamatan Cihampelas, Kabupaten Bandung Barat</p>
+        </div>
+
+        <div class="six columns right-cols">
+          <div class="row">
+            <div class="columns">
+              <h3 class="address">Come Visit</h3>
+              <p>
+                Desa Citapen, <br />
+                Kecamatan Cihampelas, <br />Kabupaten Bandung Barat
+              </p>
+            </div>
+
+            <div class="columns">
+              <h3 class="social">socialize</h3>
+              <ul>
+                <li><a href="https://www.instagram.com/nabilaadifaa?igsh=b3Fvemk0bHBjaGo=">Instagram</a></li>
+              </ul>
+            </div>
+
+            <div class="columns">
+              <h3 class="contact">Contact</h3>
+              <ul>
+                <li><a href="mailto:nabila.adifa10@gmail.com">Email</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Nested Row End -->
+        </div>
+
+        <p class="copyright">&copy; 2025 | Nabila Adifa</p>
+
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+        </div>
+      </div>
+      <!-- Row End -->
+    </footer>
+    <!-- Footer End-->
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
+    </script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/imagelightbox.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+      const map = L.map("map").setView([-6.933115, 107.490721], 14);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      // Marker 1
+      const marker1 = L.marker([-6.933115, 107.490721]).addTo(map);
+      marker1.bindPopup("<b>Ruang Terbuka Hijau</b>");
+    </script>
+  </body>
+</html>
